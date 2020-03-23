@@ -19,7 +19,7 @@ $('#submit').on('click', function(event) {
 
 async function getWeather(city,country){
 // API Call, returns json with weather information, return main/description, joins with store information, passes on to further analyze and render
-const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country }&APPID=${weather_api}&units=imperial`)
+const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country }&APPID=${weather_api}&units=imperial`)
 const result = await apiCall.json();
 const main = result.weather[0].main;
 const temp = result.main.temp;
@@ -41,30 +41,36 @@ function analyzeCondition(resultMain){
 let pack = [];
 let active = [];
 let bringPic = '';
+let activePic = '';
 for(i=0;i<store.length;i++){
 	if(resultMain == store[i].main){
 		bring = store[i].bring;
 		active = store[i].activities;
 		bringPic = store[i].bringPic;
+		activePic = store[i].activePic;
 		}
 	}
 	renderBring(bring,bringPic);	
-	renderActive(active);
+	renderActive(active,activePic);
 }
 
 function analyzeTemp(apiMax,apiMin){
 	// Takes in high and low temperature, with switch statment or if/else, returns "what to pack" array
 	let whatToPack= [];
+	let packPic = '';
 	let max = apiMax;
 	let min = apiMin;
 	if(max<40 || min<40){
 		whatToPack = ['Parka','Overcoat','Sweaters','Thermals']
+		packPic = 'https://www.bysarahward.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Flats-Styling-Patagonia-3.jpg?bwg=1537770243'
 	} else if (max<70 || min<70){
 		whatToPack = ['Windbreaker','Sweaters','Light Jacket']
+		packPic = 'https://i.pinimg.com/474x/f7/39/62/f739626ed7c5acf4b27786a71b4ca0a2.jpg'
 	} else {
 		whatToPack = ['Shorts','T-Shirts','Light Button-downs']
+		packPic = 'https://static1.squarespace.com/static/528f8b33e4b01f2a315145b2/5719e00c1d07c0bcdda377a7/598c95c7bebafb811d5c379c/1519999585367/shorts+flat+lay%403x.png?format=1500w'
 	}
-	renderPack(whatToPack);	
+	renderPack(whatToPack,packPic);	
 }
 
 function renderTemp(apiTemp,apiMax,apiMin,apiMain,apiMainPic){
@@ -83,11 +89,12 @@ function renderTemp(apiTemp,apiMax,apiMin,apiMain,apiMainPic){
 				`);	
 }
 
-function renderPack(whatToPack){
+function renderPack(whatToPack,storePackPic){
 // Takes in packing information and renders packing card
-	let pack = whatToPack
+	let pack = whatToPack;
+	let packPic =storePackPic;
 	$('#pack').show();
-	$('#pack').css("background","linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(https://images.unsplash.com/photo-1534534573898-db5148bc8b0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80) center center");
+	$('#pack').css(`background`,`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(${packPic}) center center`);
 	$('#pack').append('<h2>Here is what you should pack: </h2>')
 	$('#pack-text').append(`<ul>`)
 					for (i=0;i<pack.length;i++){
@@ -110,11 +117,12 @@ function renderBring(storeBring,storeBringPic){
 					$('#bring-text').append(`</ul>`);
 }
 
-function renderActive(storeActive){
+function renderActive(storeActive,storeActivePic){
 // Renders activities based on weather condition	
 	let active = storeActive;
+	let activePic = storeActivePic;
 	$('#activities').show();
-	$('#activities').css("background","linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),url(https://images.unsplash.com/photo-1522849811436-5e4917aefca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80) center center")
+	$('#activities').css(`background`,`linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(${activePic}) center center`)
 	$('#activities').append('<h2>Here are some fun activities you can do: </h2>')
 	$('#active-text').append(`<ul>`)
 					for (i=0;i<active.length;i++){

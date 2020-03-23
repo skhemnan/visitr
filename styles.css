@@ -46,16 +46,13 @@ body{
 .card{
 	border-radius:10px;
 	background-color:#001021;
+	background-size:20% 20%;
 	position:relative;
-	width:300px;
+	width:350px;
 	height:350px;
 	overflow:hidden;
 	padding:5px;
 	margin:10px;
-}
-
-#temp,#pack,#bring,#activities{
-	background-size:20% 20%;
 }
 
 .card-text{
@@ -78,9 +75,9 @@ body{
 }
 
 .temperature{
-	font-size:100px;
-	margin-left:130px;
-	margin-top:150px;
+	font-size:80px;
+	margin-left:200px;
+	margin-top:170px;
 	padding:10px;	
 }
 
@@ -165,16 +162,8 @@ h2{
 	#city,#country{
 		width:40vw;
 	}
-	.card{
-		font-size:15px;
-	}
-	.main{
-		flex-direction:row;
-		justify-content:flex-start;
-		align-items:center;
-	}
 }
-@media screen and (min-width:900px){
+@media screen and (min-width:1050px){
 	.plane_center{
 		max-height:10%;
 		max-width:10%;
@@ -187,9 +176,10 @@ h2{
 	#city,#country{
 		width:20vw;
 	}	
-	.card{
-			
+	.temperature{
+		margin-left:170px;
 	}
+
 	.main{
 		flex-direction:row;
 		justify-content:center;
