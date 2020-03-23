@@ -1,0 +1,181 @@
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	background:linear-gradient(#001021,#034748);
+	background-color:black;
+	height:100vh;
+	background-attachment:fixed;
+	font-family: 'Roboto';
+}
+
+.main{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+
+.form{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.image_wrapper{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	margin-top:20vh;
+	margin-bottom:20px;
+	transition: all 1s
+}
+
+.image_wrapper_top{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	margin-top:2vh;
+	margin-bottom:5vh;
+}
+
+.card{
+	border-radius:10px;
+	background-color:#001021;
+	background-size:300px 350px;
+	position:relative;
+	width:300px;
+	height:350px;
+	overflow:auto;
+	padding:5px;
+	margin:10px;
+}
+
+.card-text{
+	background:rgba(0, 0, 0, 0.5);
+	background-size:cover;
+	max-height:70%;
+	width:100%;
+	margin-left:-5px;
+	margin-right:-5px;
+	margin-bottom:-3px;
+	border-radius:8px;
+	position:absolute;
+	bottom:0;
+	padding:5px;
+}
+
+.picture{
+	height:50%;
+	padding:0;
+}
+
+p{
+	margin:5px;
+	color:white;
+}
+
+ul{
+	list-style: none;
+	margin:5px;
+	padding:0;
+}
+li{
+	list-style:none;
+	color:white;
+}
+h1,h3{
+	color:white;
+}
+
+
+.title{
+	color:white;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	margin-top:0px;
+	margin-bottom:5px;
+}
+
+.plane_center{
+		max-height:30%;
+		max-width:30%;
+		border: solid white 2px;
+		border-radius:50px;
+		transition: all 1s;
+}
+.plane_top{
+		max-height:15%;
+		max-width:15%;
+		border: solid white 2px;
+		border-radius:50px;	
+}
+
+#city, #country{
+	width:60vw;
+	border: solid black 2px;
+	border-radius: 5px;
+	padding: 5px;
+	font-size:15px;
+	margin-top:5px;
+	background-color:#D0D8DB;
+	text-align:center;
+}
+
+#submit{
+	font-size:15px;
+	border-radius:8px;
+	border:solid gold 2px;
+	color:gold;
+	padding:5px;
+	margin-top:20px;
+	background:none;
+}
+@media screen and (min-width:600px){
+	.plane_center{
+		max-height:15%;
+		max-width:15%
+	}
+	.plane_top{
+		max-height:5%;
+		max-width:5%;
+	}
+	#city,#country{
+		width:40vw;
+	}
+	.card{
+		font-size:15px;
+	}
+	.main{
+		flex-direction:row;
+		justify-content:flex-start;
+		align-items:center;
+	}
+}
+@media screen and (min-width:900px){
+	.plane_center{
+		max-height:10%;
+		max-width:10%;
+	}
+
+	.plane_top{
+		max-height:4%;
+		max-width:4%;	
+	}
+	#city,#country{
+		width:20vw;
+	}	
+	.card{
+			
+	}
+	.main{
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+	}
+}
+
