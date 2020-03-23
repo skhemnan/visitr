@@ -2,13 +2,15 @@
 	box-sizing: border-box;
 }
 
-
 body{
 	background:linear-gradient(#001021,#034748);
 	background-color:black;
 	height:100vh;
+	overflow-x:hidden;
 	background-attachment:fixed;
 	font-family: 'Roboto';
+	margin-left:0;
+	margin-right:0;
 }
 
 .main{
