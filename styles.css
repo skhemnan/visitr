@@ -46,27 +46,30 @@ body{
 .card{
 	border-radius:10px;
 	background-color:#001021;
-	background-size:300px 350px;
 	position:relative;
 	width:300px;
 	height:350px;
-	overflow:auto;
+	overflow:hidden;
 	padding:5px;
 	margin:10px;
 }
 
+#temp,#pack,#bring,#activities{
+	background-size:20% 20%;
+}
+
 .card-text{
-	background:rgba(0, 0, 0, 0.5);
+	background:rgba(46, 49, 49, 0.8);
 	background-size:cover;
 	max-height:70%;
 	width:100%;
 	margin-left:-5px;
 	margin-right:-5px;
-	margin-bottom:-3px;
+	margin-bottom:-0.5px;
 	border-radius:8px;
 	position:absolute;
 	bottom:0;
-	padding:5px;
+	padding:10px;
 }
 
 .picture{
@@ -74,9 +77,17 @@ body{
 	padding:0;
 }
 
+.temperature{
+	font-size:100px;
+	margin-left:130px;
+	margin-top:150px;
+	padding:10px;	
+}
+
 p{
-	margin:5px;
 	color:white;
+	font-size:20px;
+	margin:0;
 }
 
 ul{
@@ -87,9 +98,16 @@ ul{
 li{
 	list-style:none;
 	color:white;
+	font-size:20px;
 }
 h1,h3{
 	color:white;
+}
+h2{
+	color:white;
+	font-size:30px;
+	padding:10px;
+	margin-top:0;
 }
 
 

@@ -10,8 +10,9 @@ const store = [
 							'Visit a Coffee Shop',
 							'Visit a Musem',
 							'Catch a Movie',
-							'Indulge in some whiskey at the nearest cozy bar'
 					],
+					mainPic:'https://images.unsplash.com/photo-1576613775061-75e52d6e6b0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80',
+					bringPic:'https://images.unsplash.com/photo-1516368694098-47836cebec97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=946&q=80'
 				},
 				{
 					main: 'Drizzle',
@@ -22,10 +23,11 @@ const store = [
 					],
 					activities: [
 						'Explore! The city can have a different look with some showers',
-						'Race boats',
 						'Go for a nature walk',
 						'Take some pictures!'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1508873760731-9c3d0bb6b961?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1499678450342-29ebee16d1ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'
 				},
 				{
 					main: 'Rain',
@@ -35,11 +37,12 @@ const store = [
 						'Rain Boots'
 					],
 					activities: [
-						'Catch a romantic movie (something about the weather makes it better)',
 						'Check out the local tastes! The spicier the better',
 						'Do some shopping! Not too much though.',
-						'Visit a beautiful church'
+						'Visit a beautiful museum'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1518182170546-07661fd94144?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1504616267454-5460d659c9be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
 				},
 				{
 					main: 'Snow',
@@ -52,9 +55,10 @@ const store = [
 					activities: [
 						'Good old fashioned snowball fight',
 						'Get some diner food',
-						'Do some nature exploring',
-						'Christmas time? Visit a Santa Village'
+						"Christmas time? Visit Santa's Village"
 					],
+					mainPic: 'https://images.unsplash.com/photo-1517166357932-d20495eeffd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1484081064812-86e90e107fa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
 				},
 				{
 					main: 'Mist',
@@ -66,7 +70,9 @@ const store = [
 						'Explore nature from an elevated perspective',
 						'Walk around with a cup of coffee',
 						'Book some tours of famous sight seeing spots'
-					]
+					],
+					mainPic: 'https://images.unsplash.com/photo-1560294997-b87a562c0641?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=935&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1520219306100-ec4afeeefe58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1893&q=80'
 				},
 				{
 					main: 'Smoke',
@@ -76,10 +82,11 @@ const store = [
 						'Scarf'
 					],
 					activities: [
-						'WARNING: If you have respiratory difficulties, stay indoors!',
 						'Minimal Outdoor activities. Check out some local restaurants!',
 						'Stay vigilant for severe weather conditions'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1582847709900-b0689dabb31e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=983&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1530006444957-62eec798a328?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=950&q=80'
 				},
 				{
 					main: 'Haze',
@@ -89,23 +96,25 @@ const store = [
 						'Face Mask'
 					],
 					activities: [
-						'WARNING: If you have respiratory difficulties, stay indoors!',
 						'Minimal Outdoor activities. Check out some local restaurants!',
 						'Stay vigilant for severe weather conditions'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1582847709900-b0689dabb31e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=983&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1566188399243-a6da7820cee3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'
 				},
 				{
 					main: 'Dust',
 					bring: [
-						'Light Jacket',
+						'Scarf',
 						'Shades',
 						'Face Mask'
 					],
 					activities: [
-						'WARNING: If you have respiratory difficulties, stay indoors!',
 						'Minimal Outdoor activities. Check out some local restaurants!',
 						'Stay vigilant for severe weather conditions'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1582847709900-b0689dabb31e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=983&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1563146413-d915a569d6b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80'
 				},
 				{
 					main: 'Fog',
@@ -116,8 +125,10 @@ const store = [
 					activities: [
 						'Explore nature from an elevated perspective',
 						'Walk around with a cup of coffee',
-						'Book some tours of famous sight seeing spots'
+						'See more of your destination once the weather clears out later in the day'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1514229917620-e7041bcb7d56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1520521179602-a47780b493dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
 				},
 				{
 					main: 'Sand',
@@ -127,23 +138,25 @@ const store = [
 						'Face Mask'
 					],
 					activities: [
-						'WARNING: If you have respiratory difficulties, stay indoors!',
 						'Minimal Outdoor activities. Check out some local restaurants!',
 						'Stay vigilant for severe weather conditions'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1582847709900-b0689dabb31e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=983&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1486012355952-89f0d82ac311?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
 				},			
 				{
 					main: 'Dust',
 					bring: [
-						'Scard',
+						'Scarf',
 						'Shades',
 						'Face Mask'
 					],
 					activities: [
-						'WARNING: If you have respiratory difficulties, stay indoors!',
 						'Minimal Outdoor activities. Check out some local restaurants!',
 						'Stay vigilant for severe weather conditions'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1582847709900-b0689dabb31e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=983&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1580483733209-558da93c143c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
 				},
 				{
 					main: 'Ash',
@@ -152,10 +165,11 @@ const store = [
 						'Face Mask'
 					],
 					activities: [
-						'WARNING: If you have respiratory difficulties, stay indoors!',
 						'Minimal Outdoor activities. Check out some local restaurants!',
 						'Stay vigilant for severe weather conditions'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1582847709900-b0689dabb31e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=983&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1580483733209-558da93c143c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
 				},
 				{
 					main: 'Squall',
@@ -166,6 +180,8 @@ const store = [
 						'WARNING: No vigorous outdoor activity',
 						'Watch out for changes in weather conditions'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1549356384-62459eaf492f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1457545195570-67f207084966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1969&q=80'
 				},
 				{
 					main: 'Tornado',
@@ -178,20 +194,23 @@ const store = [
 						'WARNING: No vigorous outdoor activity',
 						'Watch out for changes in weather conditions'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1527482797697-8795b05a13fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1528516593043-249e6b4ac7db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=938&q=80'
 				},
 				{
 					main: 'Clear',
 					bring: [
 						'Shades',
 						'Your favorite hat',
-						'Hiking Shoes'
+						'Shoes you can walk in'
 					],
 					activities: [
 						'Get some of the local food and have a picnic at a local park!',
 						'If it is the right temperature, visit the beach!',
 						'Make sure to catch the sunset!',
-						'Enjoy some good hikes in the area!'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1548845603-0daa21c2dcce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=960&q=80',
+					bringPic: 'https://images.unsplash.com/photo-1555814656-1b9cf405ce54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80'
 				},
 				{
 					main: 'Clouds',
@@ -201,9 +220,10 @@ const store = [
 					],
 					activities: [
 						'Take some pictures! Its the best lighting for it',
-						'Your destination will never look better, make sure you see every corner!',
 						'Do some cafe hopping! It will be great weather for a cup of coffee'
 					],
+					mainPic: 'https://images.unsplash.com/photo-1521843021-0ee9f5c9f8a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80',
+								bringPic: 'https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
 			}
 ]
 
