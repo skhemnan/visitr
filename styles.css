@@ -36,14 +36,20 @@ body{
 	transition: all 1s
 }
 
+#logo{
+	transform:rotate(90deg);
+}
+	
 .image_wrapper_top{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	justify-content:center;
+	transform:rotate(-90deg);
 	margin-top:2vh;
 	margin-bottom:5vh;
 }
+
 
 .card{
 	border-radius:10px;

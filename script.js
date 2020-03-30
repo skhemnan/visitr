@@ -95,7 +95,7 @@ function renderPack(whatToPack,storePackPic){
 	let packPic =storePackPic;
 	$('#pack').show();
 	$('#pack').css(`background`,`linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(${packPic}) center center`);
-	$('#pack').append('<h2>Here is what you should pack: </h2>')
+	$('#pack').append('<h2>HERE IS WHAT YOU SHOULD PACK: </h2>')
 	$('#pack-text').append(`<ul>`)
 					for (i=0;i<pack.length;i++){
 					$('#pack-text').append(`<li>${pack[i]}</li>`)	
@@ -109,7 +109,7 @@ function renderBring(storeBring,storeBringPic){
 	let bringPic = storeBringPic;
 	$('#bring').show();
 	$('#bring').css(`background`,`linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),url(${bringPic}) no-repeat center center`);
-	$('#bring').append('<h2>Here is what you should bring: </h2>')
+	$('#bring').append('<h2>HERE IS WHAT YOU SHOULD BRING: </h2>')
 	$('#bring-text').append(`<ul>`)
 					for (i=0;i<bring.length;i++){
 					$('#bring-text').append(`<li>${bring[i]}</li>`)	
@@ -123,7 +123,7 @@ function renderActive(storeActive,storeActivePic){
 	let activePic = storeActivePic;
 	$('#activities').show();
 	$('#activities').css(`background`,`linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url(${activePic}) center center`)
-	$('#activities').append('<h2>Here are some fun activities you can do: </h2>')
+	$('#activities').append('<h2>HERE ARE SOME ACTIVITIES FOR YOU: </h2>')
 	$('#active-text').append(`<ul>`)
 					for (i=0;i<active.length;i++){
 					$('#active-text').append(`<li>${active[i]}</li>`)	
