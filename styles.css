@@ -17,6 +17,7 @@ body{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+	overflow-x:hidden;
 }
 
 
@@ -33,7 +34,8 @@ body{
 	justify-content:center;
 	margin-top:20vh;
 	margin-bottom:20px;
-	transition: all 1s
+	transition: all 1s;
+	overflow-x:hidden;
 }
 
 #logo{
@@ -48,6 +50,7 @@ body{
 	transform:rotate(-90deg);
 	margin-top:2vh;
 	margin-bottom:5vh;
+	overflow-x:hidden;
 }
 
 

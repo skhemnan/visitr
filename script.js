@@ -9,10 +9,7 @@ $('#submit').on('click', function(event) {
 	if (!city || !country){
 		alert("You must fill both fields!");
 	}else{
-	$('.image_wrapper').toggleClass("image_wrapper_top","image_wrapper");
-	$('.plane_center').toggleClass("plane_top","plane_center");
-	$('.form').remove();
-	getWeather(city,country);	
+		getWeather(city,country);	
 	}
 });
 }
@@ -20,6 +17,10 @@ $('#submit').on('click', function(event) {
 async function getWeather(city,country){
 // API Call, returns json with weather information, return main/description, joins with store information, passes on to further analyze and render
 const apiCall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country }&APPID=${weather_api}&units=imperial`)
+if (apiCall.status === 200){
+$('.form').hide();
+$('.image_wrapper').toggleClass("image_wrapper_top","image_wrapper");
+$('.plane_center').toggleClass("plane_top","plane_center");
 const result = await apiCall.json();
 const main = result.weather[0].main;
 const temp = result.main.temp;
@@ -34,6 +35,9 @@ for(i=0;i<store.length;i++){
 renderTemp(temp,max,min,main,mainPic)
 analyzeTemp(max,min)
 analyzeCondition(main);
+} else {
+	alert("Please enter a valid city and country!");
+}
 }
 
 function analyzeCondition(resultMain){
